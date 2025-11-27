@@ -2,11 +2,8 @@
 set -e
 
 echo "Current directory: $(pwd)"
-echo "Listing files:"
+echo "Files in directory:"
 ls -la
 
-echo "Listing client/src/pages:"
-ls -la client/src/pages/ | head -10
-
-echo "Starting build..."
+npm install --production=false
 npm run build
