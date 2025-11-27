@@ -3,7 +3,7 @@ services:
     name: azadi-website
     env: node
     plan: free
-    buildCommand: npm install --production=false && node build-render.js
+    buildCommand: bash build.sh
     startCommand: npm start
     envVars:
       - key: NODE_ENV
